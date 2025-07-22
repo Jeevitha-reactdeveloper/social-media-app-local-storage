@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Hi,this is jeevitha.Looking for a job in frontend development",
+      "datetime": "July 15,2025 2:03:24 PM",
+      "body": "my very first post"
+    },
+    {
+      "id": 2,
+      "title": "1st post",
+      "datetime": "July 15,2025 2:03:48 PM",
+      "body": " hello"
+    },
+    {
+      "id": 3,
+      "title": "this is my 2nd post",
+      "datetime": "July 15,2025 2:04:45 PM",
+      "body": "how are you"
+    }
+  ]
+}
