@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 function Post({post}) {
   return (
-    <article>
-        <Link to = {`/post/${post.id}`}><h2>{post.title}</h2>
+    <article className='post'>
+        <Link to = {`/post/${post.id}`}><h2 className='postheading'>{post.title}</h2>
         <p className='postDate'>{post.datetime}</p>
         </Link>
         <p className='postBody'>{

@@ -9,14 +9,13 @@ html{
 }
 
 body{
-  width: 100vw;
-  min-height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
   background-color:#efefef;
   display: flex;
   overflow-x: hidden;
-  /*overflow-y: auto;
- */
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 #root{
@@ -67,6 +66,11 @@ body{
   align-items: center;
   }
 
+  .Home .post a {
+  text-decoration: none;
+}
+
+  
  .searchForm{
   width: 50%;
   padding: 1rem 0 0 0.75rem;
@@ -97,6 +101,7 @@ body{
   font-size: 1.5rem;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   
  }
 
@@ -155,14 +160,36 @@ body{
   height: 40px;
 }
 
-@media screen and (max-width:576px){
+.editbutton{
+  color:black;
+  margin: 10px;
+  font-size: 15px;
+  padding: 8px;
+  font:bold;
+}
+
+.deletebutton{
+  color:red;
+  margin: 10px;
+  font-size: 15px;
+  padding: 8px;
+  font:bold;
+}
+
+@media screen and (max-width:768px){
+  body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
   .Header ,.Footer{
    width: 100%;
    height: 40px;
   }
 .Nav{
   width: 100%;
-  height: 40px;
+  height: auto;
   padding: 5px;
 }
 
@@ -190,4 +217,53 @@ body{
   justify-content: flex-start;
   flex-wrap: wrap;
 }
+}
+
+@media screen and (max-width: 379px) {
+  .Header{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    padding: 3px;
+  }
+  .Nav {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 0.25rem;
+  }
+
+  .searchForm {
+    width: 100%;
+    margin: 0;
+    padding: 0.25rem;
+  }
+
+  .searchForm input[type="text"] {
+    font-size: 0.7rem;
+    padding: 0.3rem;
+  }
+
+  .Nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    padding-left: 0;
+    justify-content: center;
+
+  }
+
+  .Nav li {
+    width: 100%;
+    padding: 0.5rem;
+    border-bottom: 1px solid #444;
+    justify-content: center;
+
+  }
+
+  .Nav li a {
+    width: 100%;
+    display: inline-block;
+  }
 }
