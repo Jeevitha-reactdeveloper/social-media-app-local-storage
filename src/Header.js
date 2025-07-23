@@ -1,6 +1,3 @@
-import  { useContext } from 'react'
-import DataContext from './contextapi/DataContext'
-
 const Header = ({title}) => {
   return (
     <header className='Header'>
